@@ -1,0 +1,87 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+#right{
+    width: 15%;
+    background-color: #0270b4;
+    height: 100%;
+    margin-left: 87.5%;
+}
+
+#navigatie{
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    background-image: url(../Design/logo1.PNG);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: contain;
+}
+
+#logoPc{
+    display: none;
+}
+
+#pcMenu{
+    display: none;
+}
+    
+
+#menu{
+    display: nones;
+    width: 30px;
+    height: 25px;
+    float: right;
+    margin-top: -25%;
+}
+
+li{
+    list-style: none;
+    display: inline;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    background-color: #0273b9;
+    text-align: center;
+}
+  
+.overlay-content {
+    margin-top: 45%;
+    width: 90%;
+}
+  
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 48px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+  
+.overlay a:hover, .overlay a:focus {
+    color: black;
+}
+
+.closebtn img{
+    float: right;
+    width: 30px;
+    height: 25px;
+    margin-right: 0;
+    margin-top: 0;
+}

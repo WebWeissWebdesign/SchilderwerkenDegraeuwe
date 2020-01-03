@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Schilderwerken Degraeuwe</title>
+</head>
+<body>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="../../Design/close.svg"></a>
+        <div class="overlay-content">
+        <ul>
+            <a href="#" onclick="closeNav()"><li>Start</li></a>
+            <a href="#" onclick="closeNav()"><li>Diensten</li></a>
+            <a href="#" onclick="closeNav()"><li>Realisaties</li></a>
+            <a href="#" onclick="closeNav()"><li>Contact</li></a>
+        </ul>
+        <img id="logoPc" src="../Design/logoSmall.PNG">
+        </div>  
+    </div>
+    <div id="navigatie">
+        <div id="right"></div>
+            <img id="logoPc" src="../Design/logo1.PNG">
+            <a onclick="openNav()"><img id="menu" src="../../Design/menu.svg"></a>
+            <ul id="pcMenu">
+                <li>Start</li>
+                <li>Diensten</li>
+                <li>Realisaties</li>
+            </ul>
+            
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+          }
+          
+          function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+          }
+    </script>
+</body>
+</html>
