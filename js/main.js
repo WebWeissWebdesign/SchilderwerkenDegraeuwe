@@ -29,3 +29,19 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
+
+//form valideren
+function validateForm(){
+    let naam = document.forms["myForm"]["naam"].value;
+    let email = document.forms["myForm"]["email"].value;
+    let onderwerp = document.forms["myForm"]["onderwerp"].value;
+    let bericht = document.forms["myForm"]["bericht"].value;
+
+    if(naam == "" || email == "" || onderwerp == "" || bericht == ""){
+        alert("Alle velden zijn verplicht");
+        return false;
+    }
+    else{
+        alert("Bedankt voor uw interesse! We zullen u zo rap mogelijk contacteren");
+    }
+}
