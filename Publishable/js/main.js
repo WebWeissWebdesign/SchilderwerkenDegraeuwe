@@ -8,13 +8,13 @@ window.onscroll = function() {
     var nav = document.getElementById('navigatie');
     if ( window.pageYOffset > 100 ) {
         nav.classList.add("navbar1");
-        img.src = "Design/menuBlack.svg"
+        img.src = "../Design/menuBlack.svg"
         
         for(var i = 0; i < elms.length; i++) 
             elms[i].style.color='black'; // <-- whatever you need to do here.
     } else {
         nav.classList.remove("navbar1");
-        img.src = "Design/menu.svg"
+        img.src = "../Design/menu.svg"
         for(var i = 0; i < elms.length; i++) 
             elms[i].style.color='white'; // <-- whatever you need to do here.
     }
@@ -32,10 +32,10 @@ function closeNav() {
 
 //form valideren
 function validateForm(){
-    let naam = document.forms["form"]["naam"].value;
-    let email = document.forms["form"]["email"].value;
-    let onderwerp = document.forms["form"]["onderwerp"].value;
-    let bericht = document.forms["form"]["bericht"].value;
+    let naam = document.forms["myForm"]["naam"].value;
+    let email = document.forms["myForm"]["email"].value;
+    let onderwerp = document.forms["myForm"]["onderwerp"].value;
+    let bericht = document.forms["myForm"]["bericht"].value;
 
     if(naam == "" || email == "" || onderwerp == "" || bericht == ""){
         alert("Alle velden zijn verplicht");
@@ -45,3 +45,4 @@ function validateForm(){
         alert("Bedankt voor uw interesse! We zullen u zo rap mogelijk contacteren");
     }
 }
+

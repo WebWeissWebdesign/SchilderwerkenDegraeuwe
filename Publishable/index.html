@@ -14,7 +14,7 @@
         <ul>
             <a href="index.html#cta" onclick="closeNav()"><li>Start</li></a>
             <a href="index.html#onzeDiensten" onclick="closeNav()"><li>Diensten</li></a>
-            <a href="#" onclick="closeNav()"><li>Realisaties</li></a>
+            <a href="html/realisaties.html" onclick="closeNav()"><li>Realisaties</li></a>
             <a href="index.html#contact-titel" onclick="closeNav()"><li>Contact</li></a>
         </ul>
         </div>  
@@ -23,7 +23,7 @@
             <a onclick="openNav()"><img id="menu" src="Design/menu.svg"></a>
             <ul id="pcMenu">
                 <a href="index.html#onzeDiensten" id="a"><li>Diensten</li></a>
-                <a href="#" id="a"><li>Realisaties</li></a>
+                <a href="html/realisaties.html" id="a"><li>Realisaties</li></a>
                 <a href="index.html#contact-titel" id="a"><li>Contact</li></a>
             </ul>   
     </div>
@@ -66,7 +66,7 @@
     <div id="contact">
         <div id="contact-titel">CONTACTEER MIJ</div>
         <div id="myForm">
-        <form id="form" action="php/mailform.php" method="POST" onsubmit="return validateForm()">
+        <form action="php/mailform.php" method="POST" onsubmit="return validateForm()">
             <label for="naam">NAAM</label><br>
             <input type="text" id="naam" name="naam" required></input><br>
             <label for="email">EMAIL</label><br>
