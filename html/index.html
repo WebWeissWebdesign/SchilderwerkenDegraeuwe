@@ -7,38 +7,91 @@
     <link rel="stylesheet" href="../css/main.css">
     <title>Schilderwerken Degraeuwe</title>
 </head>
-<body>
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="../../Design/close.svg"></a>
         <div class="overlay-content">
         <ul>
-            <a href="#" onclick="closeNav()"><li>Start</li></a>
-            <a href="#" onclick="closeNav()"><li>Diensten</li></a>
+            <a href="index.html#cta" onclick="closeNav()"><li>Start</li></a>
+            <a href="index.html#onzeDiensten" onclick="closeNav()"><li>Diensten</li></a>
             <a href="#" onclick="closeNav()"><li>Realisaties</li></a>
-            <a href="#" onclick="closeNav()"><li>Contact</li></a>
+            <a href="index.html#contact" onclick="closeNav()"><li>Contact</li></a>
         </ul>
-        <img id="logoPc" src="../Design/logoSmall.PNG">
         </div>  
     </div>
     <div id="navigatie">
-        <div id="right"></div>
-            <img id="logoPc" src="../Design/logo1.PNG">
-            <a onclick="openNav()"><img id="menu" src="../../Design/menu.svg"></a>
+            <a onclick="openNav()"><img id="menu" src="../Design/menu.svg"></a>
             <ul id="pcMenu">
-                <li>Start</li>
-                <li>Diensten</li>
-                <li>Realisaties</li>
-            </ul>
-            
+                <a href="index.html#onzeDiensten" id="a"><li>Diensten</li></a>
+                <a href="#" id="a"><li>Realisaties</li></a>
+                <a href="index.html#contact" id="a"><li>Contact</li></a>
+            </ul>   
     </div>
-    <script>
-        function openNav() {
-            document.getElementById("myNav").style.width = "100%";
-          }
-          
-          function closeNav() {
-            document.getElementById("myNav").style.width = "0%";
-          }
-    </script>
+    <div id="cta">
+        <img src="../Design/cta-image.png">
+        <div id="maintitle">
+            SCHILDERWERKEN
+        </div>
+        <div id="subtitle">
+            DEGRAEUWE
+        </div>
+        <div id="contactbutton">
+            <a href="index.html#contact"><button>Vraag een offerte aan</button></a>
+        </div>
+        
+    </div>
+    <div id="onzeDiensten">
+        <div id="titel">ONZE DIENSTEN</div>
+        <div id="schilderwerken" class="square">
+            <div id="img-container"><img src="../Design/logoIcon.PNG"></div>
+            <div id="product">Schilderwerken</div>
+            <div id="productinfo">Met schilderwerken fleur je niet alleen je (buiten)muren op, maar ook je ramen, deuren, plafonds en trap krijgen ineens een nieuwe uitstraling. </div>
+        </div>
+        <div id="behangen" class="square">
+            <div id="img-container"><img src="../Design/logoIcon.PNG"></div>
+            <div id="product">Behangen</div>
+            <div id="productinfo">Na het voorbereiden van de muren (oud behang verwijderen, plamuren etc.) kan het gewenste behangpapier aangebracht worden. Ik help graag van de keuze van het juiste behangpapier voor uw interieur.</div>
+        </div>
+        <div id="vloerbekleding" class="square">
+            <div id="img-container"><img src="../Design/logoIcon.PNG"></div>
+            <div id="product">Vloerbekleding</div>
+            <div id="productinfo">Een interieur is niet compleet zonder een passende vloerbekleding. Op dat vlak kan het juiste parket/laminaat een warme touch aan uw interieur geven.</div>
+        </div>
+        <div id="tekeningen" class="square">
+            <div id="img-container"><img src="../Design/logoIcon.PNG"></div>
+            <div id="product">Tekeningen</div>
+            <div id="productinfo">Wilt u een gepaste tekening in de kinderkamer, een quote op de keukenmuur, of iets compleet anders? Ik doe dit voor u!</div>
+        </div>
+    </div>
+    <div id="contact">
+        <div id="contact-titel">CONTACTEER MIJ</div>
+        <div id="myForm">
+        <form action="">
+            <label for="naam">NAAM</label><br>
+            <input type="text" id="naam" name="naam" required></input><br>
+            <label for="email">EMAIL</label><br>
+            <input type="text" id="email" name="email" required></input><br>
+            <label for="onderwerp">ONDERWERP</label><br>
+            <input type="text" id="onderwerp" name="onderwerp" required></input><br>
+            <label for="bericht">BERICHT</label><br>
+            <textarea type="text" id="bericht" name="bericht" required></textarea><br>
+            <input type="submit" id="submitBtn" value="VERSTUUR">
+        </form>
+    </div>
+    </div>
+    <div id="extraInfo">
+        <div id="adres">
+            <div id="jan">Jan Degraeuwe</div>
+            Dorp 10<br>
+            8690 Alveringem
+        </div>
+        <div id="gegevens">
+            Gsm: <a href="tel:0468334496">0468 33 44 96</a><br>
+            Email: <a href="mailto:degraeuwe.jan@gmail.com">degraeuwe.jan@gmail.com</a>
+        </div>
+    </div>
+    <footer>
+        <p>Made by <a href="https://senneweiss.be/">Senne Weiss</a> in 2020</p>
+    </footer>
+    <script src="../js/main.js"></script>
 </body>
 </html>
