@@ -45,3 +45,4 @@ function validateForm(){
         alert("Bedankt voor uw interesse! We zullen u zo rap mogelijk contacteren");
     }
 }
+
